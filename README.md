@@ -1,5 +1,15 @@
 # Jegybazar
 
+## ngx-bootstrap (3-as és 4-es verzió)
+
+npm install ngx-bootstrap bootstrap --save
+https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/bootstrap.md
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
 ## Development server
