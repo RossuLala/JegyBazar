@@ -7,8 +7,8 @@ import {TicketComponent} from './ticket/ticket.component';
 import {AbautComponent} from './abaut/abaut.component';
 import {LoginComponent} from './login/login.component';
 import {RegistrationComponent} from './registration/registration.component';
-import {EventListComponent} from './event-list/event-list.component';
-import {EventDetailComponent} from './event-detail/event-detail.component';
+import {EventListComponent} from './event/event-list/event-list.component';
+import {EventDetailComponent} from './event/event-detail/event-detail.component';
 import {ProfileComponent} from './profile/profile.component';
 import {ProfileEditComponent} from './profile-edit/profile-edit.component';
 import {TicketListComponent} from './ticket-list/ticket-list.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
     children: [
     {path: 'list', component: EventListComponent},
     {path: 'new', component: EventDetailComponent},
-    {path: ':id/edit', component: EventDetailComponent}
+    {path: ':id', component: EventDetailComponent}
     ]
   },
   { path: 'ticket',

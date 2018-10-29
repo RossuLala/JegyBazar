@@ -12,8 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
-import { EventDetailComponent } from './event-detail/event-detail.component';
-import { EventListComponent } from './event-list/event-list.component';
+import { EventDetailComponent } from './event/event-detail/event-detail.component';
+import { EventListComponent } from './event/event-list/event-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AbautComponent } from './abaut/abaut.component';
 import { HomeComponent } from './home/home.component';
@@ -22,7 +22,7 @@ import { TicketDetailComponent } from './ticket-detail/ticket-detail.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { TicketComponent } from './ticket/ticket.component';
 import {AppRoutingModule} from './app-routing.module';
-import { EventCardComponent } from './event-card/event-card.component';
+import { EventCardComponent } from './event/event-card/event-card.component';
 
 @NgModule({
   declarations: [
