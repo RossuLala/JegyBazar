@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { CollapseModule } from 'ngx-bootstrap';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { JumbotronComponent } from './core/jumbotron/jumbotron.component';
-import { CardComponent } from './card/card.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { EventComponent } from './event/event.component';
 import { LoginComponent } from './user/login/login.component';
@@ -29,7 +28,6 @@ import { EventCardComponent } from './event/event-card/event-card.component';
     AppComponent,
     NavbarComponent,
     JumbotronComponent,
-    CardComponent,
     FooterComponent,
     EventComponent,
     ...AppRoutingModule.routableComponents,
