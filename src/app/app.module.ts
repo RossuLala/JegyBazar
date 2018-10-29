@@ -22,6 +22,7 @@ import { TicketDetailComponent } from './ticket-detail/ticket-detail.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { TicketComponent } from './ticket/ticket.component';
 import {AppRoutingModule} from './app-routing.module';
+import { EventCardComponent } from './event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {AppRoutingModule} from './app-routing.module';
     CardComponent,
     FooterComponent,
     EventComponent,
-    ...AppRoutingModule.routableComponents
+    ...AppRoutingModule.routableComponents,
+    EventCardComponent
     //LoginComponent,
     //RegistrationComponent,
     //ProfileComponent,
