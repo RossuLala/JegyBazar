@@ -15,7 +15,6 @@ import {TicketListComponent} from './ticket-list/ticket-list.component';
 import {TicketDetailComponent} from './ticket-detail/ticket-detail.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
   { path: 'event',
     component: EventComponent,
     children: [
@@ -32,14 +31,15 @@ const routes: Routes = [
       {path: ':id/edit', component: TicketDetailComponent}
     ]
   },
-  { path: 'about', component: AbautComponent},
-  { path: 'login', component: LoginComponent},
-  { path: 'registry', component: RegistrationComponent},
   { path: 'user',
     children: [
       {path: '', component: ProfileComponent},
       {path: 'edit', component: ProfileEditComponent},
+      {path: 'login', component: LoginComponent},
+      {path: 'registry', component: RegistrationComponent},
     ]},
+  { path: 'home', component: HomeComponent},
+  { path: 'about', component: AbautComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full'}, // csak akkor teljesen üres
   { path: '**', component: PageNotFoundComponent}
   // fontos a sorend, mert sorrendben hatja végre
