@@ -11,6 +11,8 @@ import {EventListComponent} from './event-list/event-list.component';
 import {EventDetailComponent} from './event-detail/event-detail.component';
 import {ProfileComponent} from './profile/profile.component';
 import {ProfileEditComponent} from './profile-edit/profile-edit.component';
+import {TicketListComponent} from './ticket-list/ticket-list.component';
+import {TicketDetailComponent} from './ticket-detail/ticket-detail.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -22,7 +24,14 @@ const routes: Routes = [
     {path: ':id/edit', component: EventDetailComponent}
     ]
   },
-  { path: 'ticket', component: TicketComponent},
+  { path: 'ticket',
+    component: TicketComponent,
+    children:[
+      {path: 'list', component: TicketListComponent},
+      {path: 'new', component: TicketDetailComponent},
+      {path: ':id/edit', component: TicketDetailComponent}
+    ]
+  },
   { path: 'about', component: AbautComponent},
   { path: 'login', component: LoginComponent},
   { path: 'registry', component: RegistrationComponent},
@@ -52,6 +61,8 @@ export class AppRoutingModule {
     RegistrationComponent,
     PageNotFoundComponent,
     ProfileComponent,
-    ProfileEditComponent
+    ProfileEditComponent,
+    TicketListComponent,
+    TicketDetailComponent
   ];
 }
