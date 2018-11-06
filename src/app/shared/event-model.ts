@@ -1,9 +1,9 @@
 export class EventModel {
   id: number;
-  name: string;
-  date: string;
-  pictureURL: string;
-  description: string;
+  name?: string;
+  date?: string;
+  pictureURL?: string;
+  description?: string;
 
   constructor(param?: EventModel){
     if (param) {
@@ -11,9 +11,6 @@ export class EventModel {
     }
   }
 
-  proba(){
-    console.log('dudu');
-  }
 }
 
 

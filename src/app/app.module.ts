@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { EventCardComponent } from './event/event-card/event-card.component';
 
 import { EventService } from './shared/event.service';
+import { UserService } from './shared/user.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EventService } from './shared/event.service';
     AppRoutingModule
   ],
   providers: [
-    EventService
+    EventService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

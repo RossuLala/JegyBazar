@@ -80,4 +80,5 @@ export class EventService {
   getAllEvents(): EventModel[] {
     return this._events;
   }
+
 }
