@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { CollapseModule } from 'ngx-bootstrap';
+import { AlertModule, CollapseModule} from 'ngx-bootstrap';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { JumbotronComponent } from './core/jumbotron/jumbotron.component';
 import { FooterComponent } from './core/footer/footer.component';
@@ -27,6 +27,7 @@ import { UserService } from './shared/user.service';
   imports: [
     BrowserModule,
     CollapseModule.forRoot(),
+    AlertModule.forRoot(),
     AppRoutingModule
   ],
   providers: [
