@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home"
+    >Jegybazár</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="active">Home</a>
+        <a class="nav-item nav-link" routerLink="/event/list" routerLinkActive="active">Események</a>
+        <a class="nav-item nav-link" routerLink="/ticket/list" routerLinkActive="active">Jegyek</a>
+        <a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">Rólunk</a>
+        <a class="nav-item nav-link" routerLink="/user/login" routerLinkActive="active">Belépés</a>
+        <a class="nav-item nav-link btn btn-primary text-light ml-lg-2 btn-sm"
+        routerLink="/user/registry" routerLinkActive="active">Regisztráció</a>
+        <a class="nav-item nav-link" routerLinkActive="active" (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
